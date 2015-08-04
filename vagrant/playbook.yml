@@ -1,0 +1,9 @@
+---
+- name: nodejs playground
+  hosts: all
+
+  roles:
+    - role: nodesource.node
+      become: yes
+      tags: node
+
