@@ -7,3 +7,11 @@
       become: yes
       tags: node
 
+  tasks:
+    - name: backshop-es6 - Install npm packages
+      npm:
+        global: no
+        path: /vagrant
+        production: no
+        state: latest
+
