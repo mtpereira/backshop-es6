@@ -44,9 +44,11 @@ pip install -r vagrant/requirements.txt
 
 ansible-galaxy install -r vagrant/requirements.yml -p vagrant/roles/ --force --ignore-errors
 
+vagrant up
+
 echo "##############################################"
 echo ""
 echo "Run \"source $(pwd)/.virtualenv/bin/activate\""
 echo "to get started!"
-echo "When you're done, run \"deactivate\"."
+echo "When you're done, run \"vagrant destroy\" and \"deactivate\"."
 
